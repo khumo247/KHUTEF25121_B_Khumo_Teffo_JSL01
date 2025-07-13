@@ -1,0 +1,168 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f7fd;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background-color: #ffffff;
+  width: 260px;
+  padding: 2rem 1.5rem;
+  border-right: 1px solid #e0e4ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 2.5rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.logo .bar {
+  width: 8px;
+  height: 32px;
+  border-radius: 4px;
+  background: linear-gradient(to bottom, #635fc7, #a8a4ff);
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000112;
+}
+
+.boards-title {
+  font-size: 0.75rem;
+  color: #828fa3;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.board-button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 0.875rem;
+  cursor: pointer;
+  text-align: left;
+  color: #ffffff;
+  background-color: #635fc7;
+}
+
+/* MAIN AREA */
+.main {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* HEADER */
+.header {
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.header h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* COLUMNS */
+.columns {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* COLUMN */
+.column {
+  background-color: #f4f7fd;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #828fa3;
+  margin-bottom: 1rem;
+}
+
+/* DOT COLORS */
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.todo-dot {
+  background-color: #49c4e5;
+}
+
+.doing-dot {
+  background-color: #8471f2;
+}
+
+.done-dot {
+  background-color: #67e2ae;
+}
+
+/* CARD */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  box-shadow: 0px 4px 6px rgba(99, 102, 241, 0.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+
+  .columns {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
